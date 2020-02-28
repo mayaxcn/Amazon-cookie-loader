@@ -12,5 +12,4 @@
 # screensnapshot2
 ![screensnapshot截图2](https://github.com/mayaxcn/Amazon-cookie-loader/blob/master/screensnapshot2.PNG)
 
- ### BTW:If you need any amazon cookie or 亚马逊黑科技,contact me!!
- 
+ ### BTW:If you need any Amazon cookie or 亚马逊黑科技产品. Contact me!!
