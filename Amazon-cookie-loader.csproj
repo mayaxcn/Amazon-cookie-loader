@@ -209,6 +209,8 @@
     <Content Include="bin\Debug\WebDriver.dll" />
     <Content Include="biscuit_uOT_icon.ico" />
     <Content Include="Newtonsoft.Json.dll" />
+    <Content Include="screensnapshot1.PNG" />
+    <Content Include="screensnapshot2.PNG" />
     <Content Include="WebDriver.dll" />
   </ItemGroup>
   <ItemGroup />
