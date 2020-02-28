@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E702FFE-8B32-4D45-A7F2-EE98D444D8DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Amazon_cookie_loader</RootNamespace>
+    <AssemblyName>Amazon-cookie-loader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>biscuit_uOT_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>.\WebDriver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\Amazon-cookie-loader.exe.config" />
+    <None Include="bin\Debug\ChromeBin\69.0.3497.100.manifest" />
+    <None Include="bin\Debug\ChromeBin\74.0.3729.108.manifest" />
+    <None Include="bin\Debug\ChromeBin\76.0.3809.87.manifest" />
+    <None Include="bin\Debug\ChromeBin\chrome.dll.sig" />
+    <None Include="bin\Debug\ChromeBin\chrome.exe.sig" />
+    <None Include="bin\Debug\ChromeBin\chrome_100_percent.pak" />
+    <None Include="bin\Debug\ChromeBin\chrome_200_percent.pak" />
+    <None Include="bin\Debug\ChromeBin\chrome_child.dll.sig" />
+    <None Include="bin\Debug\ChromeBin\default_apps\docs.crx" />
+    <None Include="bin\Debug\ChromeBin\default_apps\drive.crx" />
+    <None Include="bin\Debug\ChromeBin\default_apps\external_extensions.json" />
+    <None Include="bin\Debug\ChromeBin\default_apps\gmail.crx" />
+    <None Include="bin\Debug\ChromeBin\default_apps\youtube.crx" />
+    <None Include="bin\Debug\ChromeBin\Dictionaries\en-GB-8-0.bdic" />
+    <None Include="bin\Debug\ChromeBin\Dictionaries\en-US-8-0.bdic" />
+    <None Include="bin\Debug\ChromeBin\Extensions\external_extensions.json" />
+    <None Include="bin\Debug\ChromeBin\First Run" />
+    <None Include="bin\Debug\ChromeBin\icudtl.dat" />
+    <None Include="bin\Debug\ChromeBin\Locales\am.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ar.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\bg.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\bn.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ca.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\cs.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\da.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\de.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\el.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\en-GB.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\en-US.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\es-419.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\es.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\et.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\fa.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\fi.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\fil.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\fr.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\gu.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\he.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\hi.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\hr.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\hu.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\id.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\it.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ja.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\kn.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ko.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\lt.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\lv.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ml.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\mr.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ms.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\nb.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\nl.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\pl.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\pt-BR.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\pt-PT.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ro.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ru.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\sk.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\sl.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\sr.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\sv.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\sw.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\ta.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\te.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\th.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\tr.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\uk.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\vi.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\zh-CN.pak" />
+    <None Include="bin\Debug\ChromeBin\Locales\zh-TW.pak" />
+    <None Include="bin\Debug\ChromeBin\MEIPreload\manifest.json" />
+    <None Include="bin\Debug\ChromeBin\MEIPreload\preloaded_data.pb" />
+    <None Include="bin\Debug\ChromeBin\nacl_irt_x86_64.nexe" />
+    <None Include="bin\Debug\ChromeBin\natives_blob.bin" />
+    <None Include="bin\Debug\ChromeBin\resources.pak" />
+    <None Include="bin\Debug\ChromeBin\v8_context_snapshot.bin" />
+    <None Include="bin\Debug\ChromeBin\WidevineCdm\license" />
+    <None Include="bin\Debug\ChromeBin\WidevineCdm\manifest.json" />
+    <None Include="bin\Debug\ChromeBin\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll.sig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Amazon-cookie-loader.exe" />
+    <Content Include="bin\Debug\Amazon-cookie-loader.pdb" />
+    <Content Include="bin\Debug\ChromeBin\chrome.dll" />
+    <Content Include="bin\Debug\ChromeBin\chrome.exe" />
+    <Content Include="bin\Debug\ChromeBin\chromedriver.exe" />
+    <Content Include="bin\Debug\ChromeBin\chrome_child.dll" />
+    <Content Include="bin\Debug\ChromeBin\chrome_elf.dll" />
+    <Content Include="bin\Debug\ChromeBin\chrome_proxy.exe" />
+    <Content Include="bin\Debug\ChromeBin\chrome_watcher.dll" />
+    <Content Include="bin\Debug\ChromeBin\d3dcompiler_47.dll" />
+    <Content Include="bin\Debug\ChromeBin\elevation_service.exe" />
+    <Content Include="bin\Debug\ChromeBin\eventlog_provider.dll" />
+    <Content Include="bin\Debug\ChromeBin\hook64.dll" />
+    <Content Include="bin\Debug\ChromeBin\libegl.dll" />
+    <Content Include="bin\Debug\ChromeBin\libglesv2.dll" />
+    <Content Include="bin\Debug\ChromeBin\notification_helper.exe" />
+    <Content Include="bin\Debug\ChromeBin\swiftshader\libegl.dll" />
+    <Content Include="bin\Debug\ChromeBin\swiftshader\libglesv2.dll" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logo.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logobeta.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logobetalight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logocanary.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logocanarylight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logodev.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logodevlight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\logolight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogo.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogobeta.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogobetalight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogocanary.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogocanarylight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogodev.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogodevlight.png" />
+    <Content Include="bin\Debug\ChromeBin\VisualElements\smalllogolight.png" />
+    <Content Include="bin\Debug\ChromeBin\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\WebDriver.dll" />
+    <Content Include="biscuit_uOT_icon.ico" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <Content Include="WebDriver.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
